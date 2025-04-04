@@ -1,5 +1,6 @@
-import connectDB from "@/config/database";
 export const dynamic = 'force-dynamic'
+
+import connectDB from "@/config/database";
 export async function POST(req) {
   let db; // Declare db variable to ensure closure in 'finally' block
 

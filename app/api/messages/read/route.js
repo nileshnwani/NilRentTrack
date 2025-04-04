@@ -1,5 +1,7 @@
-import connectDB from "@/config/database";
 export const dynamic = 'force-dynamic'
+
+import connectDB from "@/config/database";
+
 export async function GET(req) {
   let db; // Declare db outside try block for proper closure
 

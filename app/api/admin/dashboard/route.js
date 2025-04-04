@@ -1,4 +1,4 @@
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-dynamic';
 import { checkRole } from '@/middleware/authorization';
 
 export async function GET(req) {

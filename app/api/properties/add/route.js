@@ -1,8 +1,9 @@
+export const dynamic = 'force-dynamic';
+
 import { NextResponse } from 'next/server';
 import connectDB from '@/config/database';
 import fs from 'fs';
 import path from 'path';
-export const dynamic = 'force-dynamic';
 
 // Handle POST request to add a new property
 export async function POST(req) {

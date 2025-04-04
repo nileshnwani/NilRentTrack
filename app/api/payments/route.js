@@ -1,5 +1,5 @@
 import connectDB from "@/config/database";
-
+export const dynamic = 'force-dynamic';
 export async function GET() {
   let connection; // Declare connection variable for proper closure
 

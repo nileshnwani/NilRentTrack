@@ -1,5 +1,6 @@
-import connectDB from "@/config/database";
 export const dynamic = 'force-dynamic';
+
+import connectDB from "@/config/database";
 
 
 export async function GET(req) {
