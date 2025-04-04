@@ -14,7 +14,6 @@ export function verifyAuth(req) {
     return null;
   }
 }
-const jwt = require('jsonwebtoken');
 
 jwt.verify(token, secretKey, (err, decoded) => {
   if (err) {
