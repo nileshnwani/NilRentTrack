@@ -1,5 +1,8 @@
+
 import { NextResponse } from 'next/server';
 import jwt from 'jsonwebtoken';
+import { verifyAuth } from './auth'; // ✅ import the verifyAuth function
+
 
 export function verifyAuth(req) {
   try {
