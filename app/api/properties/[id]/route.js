@@ -1,6 +1,7 @@
 // app/api/properties/[id]/route.js
 import { NextResponse } from 'next/server';
 import connectDB from '@/config/database';
+export const dynamic = 'force-dynamic';
 
 export async function GET(req, { params }) {
   const { id } = params;

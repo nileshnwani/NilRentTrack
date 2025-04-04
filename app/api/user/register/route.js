@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import connectDB from '@/config/database';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
+export const dynamic = 'force-dynamic';
 
 export async function POST(req) {
   let connection; 

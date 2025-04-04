@@ -1,4 +1,5 @@
 import { checkRole } from '@/middleware/authorization';
+export const dynamic = 'force-dynamic';
 
 export async function GET(req) {
   const authResult = checkRole(req, ['user', 'admin']);

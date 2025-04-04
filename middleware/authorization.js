@@ -1,4 +1,6 @@
 
+import { verifyAuth } from './auth'; // ✅ import the verifyAuth function
+
 export function checkRole(req, allowedRoles) {
   const user = verifyAuth(req);
   if (!user) {

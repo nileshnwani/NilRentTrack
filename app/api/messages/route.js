@@ -1,5 +1,5 @@
 import connectDB from "@/config/database";
-
+export const dynamic = 'force-dynamic'
 export async function DELETE(req) {
   let db; // Declare the connection variable to ensure proper closure
 

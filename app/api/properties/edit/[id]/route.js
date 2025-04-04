@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import connectDB from "@/config/database";
 import fs from "fs";
 import path from "path";
+export const dynamic = 'force-dynamic';
 
 // Handle GET request to fetch a single property
 export async function GET(req, { params }) {
