@@ -1,3 +1,4 @@
+
 export function checkRole(req, allowedRoles) {
   const user = verifyAuth(req);
   if (!user) {
