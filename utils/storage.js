@@ -3,11 +3,17 @@ export function saveUserToLocalStorage(user) {
 }
 
 export function getUserFromLocalStorage() {
-  if (typeof window !== 'undefined') {
-    return JSON.parse(localStorage.getItem('user'));
+  try {
+    if (typeof window !== 'undefined') {
+      const item = localStorage.getItem('user');
+      return item ? JSON.parse(item) : null;
+    }
+  } catch (error) {
+    console.error('Error accessing localStorage:', error);
   }
   return null;
 }
+
 
 export function removeUserFromLocalStorage() {
   localStorage.removeItem('user');
